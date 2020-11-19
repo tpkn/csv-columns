@@ -8,9 +8,9 @@ Easily extract and access columns from a csv file
 Keep in mind that the indexes in the results have the same sequence as in the `find_this` variable:
 
 ```go
-var clean bool = true
-var find_this []string = []string { "Name", "Date", "Counter" }
-var header_row []string = []string { "Counter", "Name", "Date" }
+var clean = true
+var find_this = []string { "Name", "Date", "Counter" }
+var header_row = []string { "Counter", "Name", "Date" }
 
 c, i, _ := csvtools.FindColumns(find_this, header_row, clean)
 ```
