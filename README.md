@@ -37,10 +37,10 @@ A row from csv file that you think is a header
 Exclude non-existent columns from the results
 
 ```go
-// `clean` = false
+// clean = false
 [ "Name", "NonExistent", "Counter" ], [ 1, -1, 0 ]
 
-// `clean` = true
+// clean = true
 [ "Name", "Counter" ], [ 1, 0 ]
 ```
 
