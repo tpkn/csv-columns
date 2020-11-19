@@ -7,12 +7,12 @@ import (
 )
 
 // All columns
-// var columns []string = []string {}
-var columns []string = strings.Split("Name,  Date, Apple,Counter , Some Column", ",")
+// var columns = []string {}
+var columns = strings.Split("Name,  Date, Apple,Counter , Some Column", ",")
 
 // Csv data
-var header_row []string = []string { "Counter", "Name", "Date", "Random" }
-var data_row []string = []string { "10740728", "Vasya", "2020-11-18 02:31:00.731", "6701235619237.788567" }
+var header_row = []string { "Counter", "Name", "Date", "Random" }
+var data_row = []string { "10740728", "Vasya", "2020-11-18 02:31:00.731", "6701235619237.788567" }
 
 func TestFindColumns(t *testing.T) {
 	c, _, m := FindColumns(columns, header_row, false)
