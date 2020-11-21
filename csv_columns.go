@@ -13,7 +13,7 @@ type results struct {
 
 func FindColumns(columns_list []string, header_row []string, clean bool) ([]string, []int, map[string]int) {
 	result := results{}
-	result.mapped = make(map[string]int)
+	result.mapped = map[string]int {}
 	
 	if len(columns_list) == 0 {
 		columns_list = header_row[0:]
